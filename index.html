@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="calc">
+    <div class="cal" >
+        <div class="db">
+            <input type="text" id="inputbox" placeholder="0">
+        </div>
+        <div class="r">
+            <button class="m" type="button">AC</button>
+            <button class="m" type="button">DEL</button>
+            <button class="m" type="button" >%</button>
+            <span class="opr"><button type="button">/</button></span>
+        </div>
+        
+        <div class=r> 
+            <button type="button">7</button>
+            <button type="button">8</button>
+            <button type="button">9</button>     
+            <span class="opr"><button >*</button></span>
+        </div>
+        
+        <div class="r">  
+            <button type="button">4</button>
+            <button type="button">5</button>
+            <button type="button">6</button>    
+            <span class="opr"><button type="button">-</button></span>
+        </div>
+        
+        <div class="r">
+            <button type="button">1</button>
+            <button type="button">2</button>
+            <button type="button">3</button>
+            <span class="opr"><button type="button">+</button></span>
+        </div>
+        
+        <div class="r">
+            <button type="button">00</button>
+            <button type="button">0</button>
+            <button type="button">.</button>
+            <span class="et"><button type="button">=</button></span>
+        </div>
+    </div>
+    <script src="script.js">
+        setInterval(()=>{
+            document.querySelector(".r").style.background = "red";
+        }, 1000);
+    </script>
+</body>
+</html>
